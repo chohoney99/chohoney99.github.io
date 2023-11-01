@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+  font-size: 10px;
+}
+
+html {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#wrap > .wrap_af {
+  content: "";
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/*오른쪽 버튼*/
+#dot {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 50%;
+  right: 10px;
+  transform: translatey(-50%);
+  z-index: 100;
+}
+
+#dot > ul {
+  width: 100px;
+}
+
+#dot li {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+}
+
+#dot li a {
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: absolute;
+}
+#dot li a img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#dot ul .active {
+  box-shadow: 0 0 0 2px #0cdaff;
+}
+
+#dot ul li:nth-of-type(2).active {
+  box-shadow: 0 0 0 2px #333;
+}
+
+#dot ul li:nth-of-type(3).active {
+  box-shadow: 0 0 0 2px #0080ff;
+}
+
+#dot ul li:nth-of-type(4).active {
+  box-shadow: 0 0 0 2px #f8cf3f;
+}
+
+#dot ul li:nth-of-type(5).active {
+  box-shadow: 0 0 0 2px #000;
+}
+
+#dot ul li:nth-of-type(6).active {
+  box-shadow: 0 0 0 2px #f14101;
+}
+
+#dot ul li:nth-of-type(7).active {
+  box-shadow: 0 0 0 2px #9517ff;
+}
+
+.active a {
+  transform: scale(0.8);
+}
+
+#dot li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+section h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+section p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*페이지*/
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 100px;
+  background: #f7f0e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*p0*/
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #111;
+}
+
+/*바탕 포인트 컬러*/
+.background {
+  width: px;
+  height: px;
+  position: absolute;
+  top: 10%;
+}
+
+section .page:not(:nth-of-type(2n)) .con_wrap .background {
+  left: 0;
+}
+
+section .page:nth-of-type(2n) .con_wrap .background {
+  right: 0;
+}
+
+.p01 {
+  background: #eee;
+}
+
+.p02 {
+  background: #eee;
+}
+
+.p03 {
+  background: #7b8f09;
+}
+
+.p04 {
+  background: #f0a91b;
+}
+
+.p05 {
+  background: #efefef;
+}
+
+/*pf_bot*/
+.pf_bot {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  position: relative;
+}
+
+.contents1 {
+  width: 400px;
+  height: 100%;
+  padding-top: 200px;
+}
+
+.contents2 {
+  width: 1100px;
+  height: 700px;
+  position: relative;
+}
+.contents2 .pc {
+  margin-left: 40px;
+  width: 1000px;
+  height: 600px;
+  border-radius: 15px 40px 15px 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.contents2 .pc img {
+  width: 100%;
+}
+.contents2 .pc:hover {
+  background-color: #000;
+}
+.contents2 .pc:hover img {
+  opacity: 0.9;
+  transition: all 0.5s linear;
+}
+.contents2 .m {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.contents2 .m .phone {
+  width: 250px;
+}
+.contents2 .m .mscreen {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 220px;
+  height: 410px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.contents2 .m .mscreen img {
+  width: 100%;
+  margin: 0 auto;
+}
+.contents2 .mleft {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.contents2 .mleft .phone {
+  width: 250px;
+}
+.contents2 .mleft .mscreenleft {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 220px;
+  height: 410px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.contents2 .mleft .mscreenleft img {
+  width: 100%;
+  margin: 0 auto;
+}
