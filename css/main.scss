@@ -1,16 +1,17 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'NEXON Lv1 Gothic OTF';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-    font-weight: normal;
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'NEXON Lv1 Gothic OTF';
+    font-family: 'TheJamsil5Bold';
 }
 
 body {
@@ -102,34 +103,6 @@ a {
     }
 }
 
-#dot ul .active {
-    box-shadow: 0 0 0 2px #0cdaff;
-}
-
-#dot ul li:nth-of-type(2).active {
-    box-shadow: 0 0 0 2px #333;
-}
-
-#dot ul li:nth-of-type(3).active {
-    box-shadow: 0 0 0 2px #0080ff;
-}
-
-#dot ul li:nth-of-type(4).active {
-    box-shadow: 0 0 0 2px #f8cf3f;
-}
-
-#dot ul li:nth-of-type(5).active {
-    box-shadow: 0 0 0 2px #000;
-}
-
-#dot ul li:nth-of-type(6).active {
-    box-shadow: 0 0 0 2px #f14101;
-}
-
-#dot ul li:nth-of-type(7).active {
-    box-shadow: 0 0 0 2px #9517ff;
-}
-
 .active a {
     transform: scale(0.8);
 }
@@ -144,15 +117,15 @@ section {
     height: 100%;
     position: relative;
     h1 {
-        font-size: 32px;
+        font-size: 38px;
         margin: 10px 0;
     }
     h2 {
-        font-size: 24px;
+        font-size: 28px;
         margin: 10px 0;
     }
     p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 20px;
     }
 }
@@ -175,7 +148,6 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
-    background: #111;
 }
 
 
@@ -196,23 +168,23 @@ section .page:nth-of-type(2n) .con_wrap .background {
 }
 
 .p01 {
-    background: #eee;
+    background: #519D9E;
 }
 
 .p02 {
-    background: #eee;
+    background: #B8FCCC;
 }
 
 .p03 {
-    background: #7b8f09;
+    background: #D1B6E1;
 }
 
 .p04 {
-    background: #f0a91b;
+    background: #58C9B9;
 }
 
 .p05 {
-    background: #efefef;
+    background: #9DC8C8;
 }
 
 /*pf_bot*/
@@ -225,7 +197,27 @@ section .page:nth-of-type(2n) .con_wrap .background {
 
 .contents1 {
     width: 400px; height: 100%;
-    padding-top: 200px;
+    padding: 200px 50px 0;
+    color: #111;
+    p {
+        line-height: 25px;
+    }
+    .num {
+        font-family: 'Black Ops One';
+        font-size: 120px;
+        letter-spacing: 10px;
+        margin-bottom: -30px;
+    }
+    .title {
+        margin-bottom: 30px;
+    }
+    button {
+        width: 70%;
+        margin: 5px; padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 .contents2 {
     width: 1100px; height: 700px;
@@ -240,11 +232,20 @@ section .page:nth-of-type(2n) .con_wrap .background {
             width: 100%;
         }
     }
+    .pc::before {
+        content: url("../img/moreicon.png");
+        position: absolute;
+        top: 40%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .pc:hover {
         background-color: #000;
         img {
             opacity: 0.9;
             transition: all 0.5s linear;
+        }
+        .more {
+            display: block;
         }
     }
     .m {
