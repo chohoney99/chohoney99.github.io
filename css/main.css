@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat&family=Noto+Sans+KR&display=swap");
 @font-face {
   font-family: "TheJamsil5Bold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2") format("woff2");
@@ -16,7 +16,6 @@
 body {
   height: 100%;
   overflow-y: hidden;
-  font-size: 10px;
 }
 
 html {
@@ -147,6 +146,83 @@ section p {
   width: 100%;
   height: 100%;
   position: relative;
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-size: cover;
+}
+#particles-js .wrap {
+  width: 1400px;
+  position: relative;
+  z-index: 1;
+}
+#particles-js .wrap table {
+  text-align: justify;
+  font-size: 20px;
+}
+#particles-js .wrap table th {
+  padding: 5px 30px 5px 0px;
+  font-family: "Noto Sans KR";
+}
+#particles-js .wrap table td {
+  font-family: "Noto Sans KR";
+}
+#particles-js .wrap .back {
+  position: absolute;
+  font-size: 500px;
+  top: -150px;
+  left: -150px;
+  color: #fff;
+  opacity: 0.5;
+  z-index: -1;
+}
+#particles-js #box {
+  width: 1400px;
+  height: 600px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#particles-js #box .box {
+  width: 30%;
+  height: 300px;
+  margin-bottom: 10px;
+  border-top: 2px solid #555;
+  color: #555;
+  position: relative;
+}
+#particles-js #box .box h2 {
+  font-family: "Noto Sans KR";
+}
+#particles-js #box .box p {
+  font-family: "Noto Sans KR";
+  line-height: 30px;
+}
+#particles-js #box .box .txt {
+  display: none;
+}
+#particles-js #box .box .img {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#particles-js #box .box .img img {
+  width: 150px;
+}
+#particles-js #box .box .html {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#particles-js #box .box .html img {
+  width: 200px;
+}
+#particles-js #box .box:hover {
+  color: #000;
+  border-top: 2px solid #000;
 }
 
 /*바탕 포인트 컬러*/
@@ -166,23 +242,23 @@ section .page:nth-of-type(2n) .con_wrap .background {
 }
 
 .p01 {
-  background: #519D9E;
+  background: #f8f8ff;
 }
 
 .p02 {
-  background: #B8FCCC;
+  background: #f8f8ff;
 }
 
 .p03 {
-  background: #D1B6E1;
+  background: #f8f8ff;
 }
 
 .p04 {
-  background: #58C9B9;
+  background: #f8f8ff;
 }
 
 .p05 {
-  background: #9DC8C8;
+  background: #f8f8ff;
 }
 
 /*pf_bot*/
@@ -198,9 +274,12 @@ section .page:nth-of-type(2n) .con_wrap .background {
   height: 100%;
   padding: 200px 50px 0;
   color: #111;
+  position: relative;
+  z-index: 1;
 }
 .contents1 p {
   line-height: 25px;
+  font-family: "Noto Sans KR";
 }
 .contents1 .num {
   font-family: "Black Ops One";
@@ -212,18 +291,74 @@ section .page:nth-of-type(2n) .con_wrap .background {
   margin-bottom: 30px;
 }
 .contents1 button {
-  width: 70%;
-  margin: 5px;
+  width: 140px;
   padding: 10px;
-  font-size: 20px;
-  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  border-radius: 0;
+  border: 1px solid;
   cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: bold;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.contents1 button:hover {
+  background-color: lightslategray;
+  color: #fff;
+}
+.contents1 .back1 {
+  position: absolute;
+  font-size: 400px;
+  top: 0;
+  left: -200px;
+  color: #ddd;
+  opacity: 0.5;
+  z-index: -1;
+}
+.contents1 .back2 {
+  position: absolute;
+  font-size: 500px;
+  top: 450px;
+  right: -150px;
+  color: #ddd;
+  opacity: 0.5;
+  z-index: -1;
+}
+.contents1 .back3 {
+  position: absolute;
+  font-size: 500px;
+  top: -50px;
+  left: -200px;
+  color: #ddd;
+  opacity: 0.5;
+  z-index: -1;
+}
+.contents1 .back4 {
+  position: absolute;
+  font-size: 500px;
+  top: -60px;
+  right: -100px;
+  color: #ddd;
+  opacity: 0.5;
+  z-index: -1;
+  text-align: right;
+}
+.contents1 .back5 {
+  position: absolute;
+  font-size: 300px;
+  bottom: -50px;
+  left: -200px;
+  color: #ddd;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .contents2 {
   width: 1100px;
   height: 700px;
   position: relative;
+  z-index: 2;
 }
 .contents2 .pc {
   margin-left: 40px;
@@ -242,9 +377,10 @@ section .page:nth-of-type(2n) .con_wrap .background {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0.7;
 }
 .contents2 .pc:hover {
-  background-color: #000;
+  background-color: lightslategray;
 }
 .contents2 .pc:hover img {
   opacity: 0.9;
@@ -278,6 +414,7 @@ section .page:nth-of-type(2n) .con_wrap .background {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 .contents2 .mleft .phone {
   width: 250px;

@@ -53,12 +53,6 @@ $(function () {
             dot.eq(5).addClass("active");
             dot.eq(5).find("a").css({ "background": "rgba(0,0,0,0.5)" });
         }
-        if (wScroll >= contents.eq(6).offset().top) {
-            dot.removeClass("active");
-            dot.find("a").css({ "background": "rgba(0,0,0,0.5)" });
-            dot.eq(6).addClass("active");
-            dot.eq(6).find("a").css({ "background": "rgba(0,0,0,0.5)" });
-        }
 
     });
 
@@ -148,4 +142,12 @@ $('.mimg3').hover(function(){
     $(this).stop().animate({marginTop:-2470}, 6000);
 }, function(){
     $(this).stop().animate({marginTop:0}, 3000);
+});
+
+$(".box").hover(function(){
+    $(this).find(".img img").stop().animate({width:100}, 500).animate({marginBottom:-100}, 500);
+    $(this).children(".txt").show(1000);
+},function(){
+    $(this).children(".txt").hide(1000);
+    $(this).find(".img img").stop().animate({marginBottom:0}, 500).animate({width:150}, 500);
 });
