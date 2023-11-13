@@ -347,7 +347,7 @@ section .page:nth-of-type(2n) .con_wrap .background {
 .contents1 .back5 {
   position: absolute;
   font-size: 300px;
-  bottom: -50px;
+  bottom: 0px;
   left: -200px;
   color: #ddd;
   opacity: 0.5;

@@ -147,7 +147,7 @@ $('.mimg3').hover(function(){
 $(".box").hover(function(){
     $(this).find(".img img").stop().animate({width:100}, 500).animate({marginBottom:-100}, 500);
     $(this).children(".txt").show(1000);
-},function(){
+}, function(){
     $(this).children(".txt").hide(1000);
     $(this).find(".img img").stop().animate({marginBottom:0}, 500).animate({width:150}, 500);
 });
