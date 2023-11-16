@@ -253,15 +253,6 @@ header h1 {
 #particles-js #box .box .img img {
   width: 150px;
 }
-#particles-js #box .box .html {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#particles-js #box .box .html img {
-  width: 200px;
-}
 #particles-js #box .box:hover {
   color: #000;
   border-top: 2px solid #000;
