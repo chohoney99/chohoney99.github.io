@@ -146,8 +146,26 @@ $('.mimg3').hover(function(){
 
 $(".box").hover(function(){
     $(this).find(".img img").stop().animate({width:100}, 500).animate({marginBottom:-100}, 500);
-    $(this).children(".txt").show(1000);
+    $(this).children(".txt").stop().show(1000);
 }, function(){
-    $(this).children(".txt").hide(1000);
+    $(this).children(".txt").stop().hide(1000);
     $(this).find(".img img").stop().animate({marginBottom:0}, 500).animate({width:150}, 500);
 });
+
+$("header").click(function(){
+    $(this).hide(500);
+});
+
+const content = "프론트엔드 개발자\n 조한희의 포트폴리오입니다.";
+const text = document.querySelector(".text");
+let i = 0;
+
+function typing(){
+    let txt = content[i++];
+    text.innerHTML += txt=== "\n" ? "<br/>": txt;
+    if (i > content.length) {
+        text.textContent = "";
+        i = 0;
+    }
+}
+setInterval(typing, 200)
