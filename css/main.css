@@ -238,7 +238,7 @@ header h1 {
 }
 #particles-js #box .box p {
   font-family: "Noto Sans KR";
-  line-height: 30px;
+  line-height: 25px;
 }
 #particles-js #box .box .txt {
   display: none;
@@ -252,6 +252,10 @@ header h1 {
 }
 #particles-js #box .box .img img {
   width: 150px;
+}
+#particles-js #box .box .img .rr {
+  width: 200px;
+  transform: translateX(-20px);
 }
 #particles-js #box .box:hover {
   color: #000;

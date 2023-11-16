@@ -230,7 +230,7 @@ header {
             }
             p {
                 font-family: 'Noto Sans KR';
-                line-height: 30px;
+                line-height: 25px;
             }
             .txt {
                 display: none;
@@ -242,6 +242,10 @@ header {
                 transform: translate(-50%, -50%);
                 img {
                     width: 150px;
+                }
+                .rr {
+                    width: 200px;
+                    transform: translateX(-20px);
                 }
             }
         }
