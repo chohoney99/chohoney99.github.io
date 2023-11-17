@@ -160,6 +160,8 @@ header h1 {
   animation: blink2 1s ease-in-out infinite alternate;
   font-size: 40px;
   color: beige;
+  cursor: pointer;
+  padding: 50px;
 }
 @keyframes blink2 {
   0% {
